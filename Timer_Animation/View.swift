@@ -69,6 +69,7 @@ class View: UIView, BaseViewRepresentable {
         
         startButton.setTitle("시작", for: .normal)
         cancelButton.setTitle("취소", for: .normal)
+        cancelButton.isEnabled = false
         startButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
         cancelButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
         startButton.setTitleColor(UIColor(red: 41/255, green: 157/255, blue: 255/255, alpha: 1), for: .normal)
