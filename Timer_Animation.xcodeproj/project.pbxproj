@@ -10,12 +10,14 @@
 		04D23E7827E9DDF50019B13C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E7727E9DDF50019B13C /* AppDelegate.swift */; };
 		04D23E7A27E9DDF50019B13C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E7927E9DDF50019B13C /* SceneDelegate.swift */; };
 		04D23E7C27E9DDF50019B13C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E7B27E9DDF50019B13C /* ViewController.swift */; };
-		04D23E7F27E9DDF50019B13C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E7D27E9DDF50019B13C /* Main.storyboard */; };
 		04D23E8127E9DDF70019B13C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E8027E9DDF70019B13C /* Assets.xcassets */; };
 		04D23E8427E9DDF70019B13C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D23E8227E9DDF70019B13C /* LaunchScreen.storyboard */; };
 		04D23E8F27E9DDF80019B13C /* Timer_AnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E8E27E9DDF80019B13C /* Timer_AnimationTests.swift */; };
 		04D23E9927E9DDF80019B13C /* Timer_AnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E9827E9DDF80019B13C /* Timer_AnimationUITests.swift */; };
 		04D23E9B27E9DDF80019B13C /* Timer_AnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23E9A27E9DDF80019B13C /* Timer_AnimationUITestsLaunchTests.swift */; };
+		04D23EA827E9DE480019B13C /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23EA727E9DE480019B13C /* View.swift */; };
+		04D23EAB27E9DEAD0019B13C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04D23EAA27E9DEAD0019B13C /* SnapKit */; };
+		04D23EB427EA0DE40019B13C /* Protocole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D23EB327EA0DE40019B13C /* Protocole.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 		04D23E7727E9DDF50019B13C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04D23E7927E9DDF50019B13C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04D23E7B27E9DDF50019B13C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04D23E7E27E9DDF50019B13C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04D23E8027E9DDF70019B13C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04D23E8327E9DDF70019B13C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04D23E8527E9DDF70019B13C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,8 @@
 		04D23E9427E9DDF80019B13C /* Timer_AnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Timer_AnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D23E9827E9DDF80019B13C /* Timer_AnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer_AnimationUITests.swift; sourceTree = "<group>"; };
 		04D23E9A27E9DDF80019B13C /* Timer_AnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer_AnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04D23EA727E9DE480019B13C /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		04D23EB327EA0DE40019B13C /* Protocole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocole.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D23EAB27E9DEAD0019B13C /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +106,8 @@
 				04D23E7727E9DDF50019B13C /* AppDelegate.swift */,
 				04D23E7927E9DDF50019B13C /* SceneDelegate.swift */,
 				04D23E7B27E9DDF50019B13C /* ViewController.swift */,
-				04D23E7D27E9DDF50019B13C /* Main.storyboard */,
+				04D23EB327EA0DE40019B13C /* Protocole.swift */,
+				04D23EA727E9DE480019B13C /* View.swift */,
 				04D23E8027E9DDF70019B13C /* Assets.xcassets */,
 				04D23E8227E9DDF70019B13C /* LaunchScreen.storyboard */,
 				04D23E8527E9DDF70019B13C /* Info.plist */,
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = Timer_Animation;
+			packageProductDependencies = (
+				04D23EAA27E9DEAD0019B13C /* SnapKit */,
+			);
 			productName = Timer_Animation;
 			productReference = 04D23E7427E9DDF50019B13C /* Timer_Animation.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 04D23E6B27E9DDF50019B13C;
+			packageReferences = (
+				04D23EA927E9DEAD0019B13C /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 04D23E7527E9DDF50019B13C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +244,6 @@
 			files = (
 				04D23E8427E9DDF70019B13C /* LaunchScreen.storyboard in Resources */,
 				04D23E8127E9DDF70019B13C /* Assets.xcassets in Resources */,
-				04D23E7F27E9DDF50019B13C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D23E7C27E9DDF50019B13C /* ViewController.swift in Sources */,
+				04D23EA827E9DE480019B13C /* View.swift in Sources */,
 				04D23E7827E9DDF50019B13C /* AppDelegate.swift in Sources */,
+				04D23EB427EA0DE40019B13C /* Protocole.swift in Sources */,
 				04D23E7A27E9DDF50019B13C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +309,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		04D23E7D27E9DDF50019B13C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04D23E7E27E9DDF50019B13C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04D23E8227E9DDF70019B13C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -444,7 +448,6 @@
 				INFOPLIST_FILE = Timer_Animation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +475,6 @@
 				INFOPLIST_FILE = Timer_Animation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -604,6 +606,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04D23EA927E9DEAD0019B13C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04D23EAA27E9DEAD0019B13C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04D23EA927E9DEAD0019B13C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04D23E6C27E9DDF50019B13C /* Project object */;
 }
