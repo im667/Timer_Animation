@@ -56,13 +56,15 @@ class View: UIView, BaseViewRepresentable {
         tomato.contentMode = .scaleAspectFit
         
         timeLabel.text = "00:00:00"
-        timeLabel.isHidden = true
+//        timeLabel.isHidden = true 애니메이션 처리로 불필요해짐
+        timeLabel.alpha = 0
         timeLabel.font = .boldSystemFont(ofSize: 50)
         timeLabel.textAlignment = .center
         
         
         progress.progress = 1.0
-        progress.isHidden = true
+//        progress.isHidden = true 애니메이션 처리로 불필요해짐
+        progress.alpha = 0
         
         datePicker.preferredDatePickerStyle = .wheels
         datePicker.datePickerMode = .countDownTimer

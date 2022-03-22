@@ -54,6 +54,15 @@ class ViewController: UIViewController {
                 self.mainView.timeLabel.text = String(format: "%02d:%02d:%02d", hour,minutes,seconds)
                 self.mainView.progress.progress = Float(self.currentSeconds) / Float(self.duration)
                 
+                UIView.animate(withDuration: 0.3, delay: 0, animations: {
+                    self.mainView.tomato.transform = CGAffineTransform(rotationAngle: .pi)
+                    //뷰를 이동시키거나 스케일 조정, 회전 등 가능
+                })
+                UIView.animate(withDuration: 0.5,delay: 0.5, animations: {
+                    self.mainView.tomato.transform = CGAffineTransform(rotationAngle: .pi * 2)
+                })
+                
+                
                 if self.currentSeconds <= 0 {
                     self.stopTimer()
                     //iphondev.wiki
@@ -74,21 +83,26 @@ class ViewController: UIViewController {
         
         self.timerStatus = .end
         mainView.cancelButton.isEnabled = false
-        self.setTimerInfoViewVisble(isHidden: true)
-        mainView.datePicker.isHidden = false
         mainView.startButton.isSelected = false
 
+        UIView.animate(withDuration: 0.3, animations: {
+            self.mainView.timeLabel.alpha = 0
+            self.mainView.progress.alpha = 0
+            self.mainView.datePicker.alpha = 1
+            self.mainView.tomato.transform = .identity
+        })
+        
         self.timer?.cancel()
         self.timer = nil //타이머를 메모리에서 해제시켜야하기 때문
         
     }
-    
-    func setTimerInfoViewVisble(isHidden:Bool) {
-        
-        mainView.timeLabel.isHidden = isHidden
-        mainView.progress.isHidden = isHidden
-        
-    }
+    // Animation 처리
+//    func setTimerInfoViewVisble(isHidden:Bool) {
+//
+//        mainView.timeLabel.isHidden = isHidden
+//        mainView.progress.isHidden = isHidden
+//
+//    }
     
     func configureToggleButton(){
         mainView.startButton.setTitle("시작", for: .normal)
@@ -101,19 +115,25 @@ class ViewController: UIViewController {
         
         switch self.timerStatus {
             
-        case .start:
-            self.timerStatus = .pause
-            mainView.startButton.isSelected = false
-            self.timer?.suspend()
-      
         case .end:
             self.timerStatus = .start
-            self.setTimerInfoViewVisble(isHidden: false)
-            mainView.datePicker.isHidden = true
+           
+            UIView.animate(withDuration: 0.3, animations: {
+                self.mainView.timeLabel.alpha = 1
+                self.mainView.progress.alpha = 1
+                self.mainView.datePicker.alpha = 0
+            })
+            
             mainView.startButton.isSelected = true
             mainView.cancelButton.isEnabled = true
             self.currentSeconds = self.duration
             self.startTimer()
+            
+        case .start:
+            self.timerStatus = .pause
+            mainView.startButton.isSelected = false
+            self.timer?.suspend()
+    
         
         case .pause:
             self.timerStatus = .start
